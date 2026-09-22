@@ -6,7 +6,7 @@
 /*   By: vimauric <vimauric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/26 19:53:32 by vimauric          #+#    #+#             */
-/*   Updated: 2026/09/22 18:06:38 by vimauric         ###   ########.fr       */
+/*   Updated: 2026/09/22 19:25:27 by vimauric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,8 +89,9 @@ char	*get_next_line(int fd)
 	static char	*stash;
 	char		*buf;
 	char		*line;
+	char		dummy;
 
-	if (fd < 0 || BUFFER_SIZE <= 0)
+	if (fd < 0 || BUFFER_SIZE <= 0 || read(fd, &dummy, 0) < 0)
 		return (NULL);
 	buf = malloc(BUFFER_SIZE + 1);
 	if (!buf)

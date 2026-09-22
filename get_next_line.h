@@ -6,7 +6,7 @@
 /*   By: vimauric <vimauric@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/26 19:55:31 by vimauric          #+#    #+#             */
-/*   Updated: 2026/09/22 17:26:46 by vimauric         ###   ########.fr       */
+/*   Updated: 2026/09/22 19:25:55 by vimauric         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 42
-
 # endif
 
 size_t	ft_strlen(char *s);
