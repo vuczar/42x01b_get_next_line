@@ -1,0 +1,13 @@
+ Tester de terceiros
+gnlTester/
+
+# Binarios e objetos
+*.o
+*.out
+a.out
+gnl
+gnl_asan
+*.dSYM/
+
+# Sistema
+.DS_Store
